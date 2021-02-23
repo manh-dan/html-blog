@@ -56,6 +56,11 @@ RESPONSIVE
  h4 {
      font-size: 16px;
 }
+.headline2 {
+    background-color: #4078ff;
+    padding: 10px 20px;
+    color: #FFF;
+}
  a {
      font-weight: 600;
      color: #212631;
