@@ -61,6 +61,22 @@ RESPONSIVE
     padding: 10px 20px;
     color: #FFF;
 }
+.headline3 {
+    position: relative;
+}
+.headline3::after {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 100px;
+    height: 4px;
+    background-color: #4078ff;
+    transform: translateX(-50%);
+    content: '';
+}
+.headline4 {
+    border-bottom: 3px solid #333;
+}
  a {
      font-weight: 600;
      color: #212631;
