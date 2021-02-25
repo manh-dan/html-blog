@@ -57,7 +57,7 @@ RESPONSIVE
      font-size: 16px;
 }
 .headline2 {
-    background-color: #4078ff;
+    background-color: #333;
     padding: 10px 20px;
     color: #FFF;
 }
@@ -70,7 +70,7 @@ RESPONSIVE
     left: 50%;
     width: 100px;
     height: 4px;
-    background-color: #4078ff;
+    background-color: #333;
     transform: translateX(-50%);
     content: '';
 }
