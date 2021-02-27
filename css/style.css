@@ -71,6 +71,7 @@ h4 {
     background-color: #333;
     padding: 10px 20px;
     color: #FFF;
+    border-left: 6px solid #6a3bff;
 }
 
 .headline3 {
@@ -91,6 +92,7 @@ h4 {
 .headline4 {
     border-bottom: 3px solid #333;
 }
+
 
 a {
     font-weight: 600;
