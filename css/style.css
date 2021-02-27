@@ -71,7 +71,7 @@ h4 {
     background-color: #333;
     padding: 10px 20px;
     color: #FFF;
-    border-left: 6px solid #6a3bff;
+    border-left: 6px solid #0078ff;
 }
 
 .headline3 {
@@ -1090,7 +1090,7 @@ textarea.input {
 #footer {
     padding-bottom: 40px;
     margin-top: 40px;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.92);
     color: #FFF;
 }
 
