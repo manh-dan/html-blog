@@ -1200,6 +1200,7 @@ button {
 	FOOTER
 ===========================================================*/
 #footer {
+    position: relative;
     padding-bottom: 40px;
     margin-top: 40px;
     background-color: rgba(0, 0, 0, 0.92);
@@ -1378,9 +1379,10 @@ button {
 #pageTop {
     color: #FFF;
     position: absolute;
-    top: 15px;
+    bottom: 12px;
     right: 15px;
-    padding-right: 20px;
+    padding: 2px 16px 2px 7px;
+    transition: color .5s, background-color .5s, opacity .5s;
 }
 
 #pageTop::after {
@@ -1390,18 +1392,37 @@ button {
     border-width: 0 4px 6px 4px;
     border-style: solid;
     border-color: #FFF transparent;
+    transition: border-color .5s;
     content: '';
 }
 
 #pageTop::before {
     position: absolute;
-    top: 17px;
+    top: 18px;
     right: 4px;
     border: 3px solid #FFF;
     transform: rotate(90deg);
     border-width: 1px 5px;
-    content: '';
+    transition: border-color .5s;
     transform-origin: right;
+    content: '';
+}
+
+#pageTop.active {
+    position: fixed;
+    bottom: 10px;
+    color: #4078ff;
+    background-color: #FFF;
+    box-shadow: 1px 1px 2px 1px #b8b8b8;
+}
+
+#pageTop.active::after,
+#pageTop.active::before {
+    border-color: #4078ff;
+}
+
+#pageTop.active::after {
+    border-color: #4078ff transparent;
 }
 
 @media screen and (max-width: 425px) {
@@ -1410,7 +1431,7 @@ button {
     }
 
     #pageTop {
-        top: 6px;
+        bottom: 14px;
         right: 17px;
         padding-right: 0;
         width: 30px;
