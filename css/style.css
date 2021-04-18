@@ -1379,7 +1379,7 @@ button {
 #pageTop {
     color: #FFF;
     position: absolute;
-    bottom: 12px;
+    bottom: 36px;
     right: 15px;
     padding: 2px 16px 2px 7px;
     transition: color .5s, background-color .5s, opacity .5s;
@@ -1424,7 +1424,11 @@ button {
 #pageTop.active::after {
     border-color: #4078ff transparent;
 }
-
+@media screen and (max-width: 991px) {
+    #pageTop {
+        bottom: 12px;
+    }
+}
 @media screen and (max-width: 425px) {
     #pageTop span {
         display: none;
@@ -1438,7 +1442,7 @@ button {
         height: 30px;
         background-color: #333;
         border-radius: 50%;
-        box-shadow: 1px 1px 3px #fff;
+        box-shadow: none;
     }
 
     #pageTop::after {
