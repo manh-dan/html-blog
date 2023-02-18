@@ -95,8 +95,10 @@
 	});
 
 	$(window).resize(function () {
-		setStickyPos();
-		stickyShares($(this).scrollTop());
+		if ($(window).width() > 768) {
+			setStickyPos();
+			stickyShares($(this).scrollTop());
+		}
 	});
 
 	setStickyPos();
